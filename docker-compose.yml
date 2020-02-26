@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+
+  keycloak:
+    image: jboss/keycloak:9.0.0
+    ports:
+    - 9000:8080
+    environment:
+      - KEYCLOAK_USER="atselvan"
+      - KEYCLOAK_PASSWORD="admin"
+    
